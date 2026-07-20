@@ -893,7 +893,7 @@
     if(!(window.kakao && kakao.maps && kakao.maps.load))return;
     kakao.maps.load(function(){
       var el=document.getElementById('kakaoMap'); if(!el)return;
-      var pos=new kakao.maps.LatLng(37.540624,127.069250); // 건대입구역 인근 (선명 정확좌표 수정예정)
+      var pos=new kakao.maps.LatLng(37.5430002,127.0683499); // 선명 (카카오플레이스 661970835 실좌표)
       var map=new kakao.maps.Map(el,{center:pos,level:4}); map.setDraggable(false);
       var marker=new kakao.maps.Marker({position:pos}); marker.setMap(map);
       var iw=new kakao.maps.InfoWindow({content:'<div style="padding:5px 9px;font-size:12px;white-space:nowrap;">선명</div>'});
