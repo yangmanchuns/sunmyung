@@ -877,9 +877,15 @@
     var SITE=base, MAP='https://map.naver.com/p/search/화양동%20선명';
     if(window.Kakao && Kakao.isInitialized && Kakao.isInitialized() && Kakao.Share){
       Kakao.Share.sendDefault({
-        objectType:'text',
-        text:'소선명 ❤ 이은진 · 0823 웨딩파티\n2026.08.23 (일) · 서울 화양동 <선명>',
-        link:{mobileWebUrl:SITE,webUrl:SITE},
+        objectType:'feed',
+        content:{
+          title:'소선명 ❤ 이은진 · 0823 웨딩파티',
+          description:'2026.08.23 (일) · 서울 화양동 <선명>',
+          imageUrl:'https://yangmanchuns.github.io/sunmyung/images/main.jpg',
+          imageWidth:1010,
+          imageHeight:1400,
+          link:{mobileWebUrl:SITE,webUrl:SITE}
+        },
         buttons:[
           {title:'청첩장 보기',link:{mobileWebUrl:SITE,webUrl:SITE}},
           {title:'위치 보기',link:{mobileWebUrl:MAP,webUrl:MAP}}
